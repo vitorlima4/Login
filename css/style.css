@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+}
+
+:root{
+    --cor1: rgb(255, 159, 32);
+    --cor2: rgb(211, 124, 9);
+}
+
+body{
+    background-image: url(../imagem/fundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: .9rem;
+}
+
+a:hover{
+    color: var(--cor2);
+    text-decoration: underline;
+}
+
+/*Div Login*/
+div#login{
+    background-color: rgba(255, 255, 255, 0.479);
+    text-align: center;
+    width: 350px;
+    height: 400px;
+    margin: auto;
+    margin-top: 15vh;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 0px 30px 0px 30px;
+}
+
+div#login h1{
+    color: var(--cor1);
+}
+
+/*Formulário*/
+form{
+    margin: 25px 0px;
+}
+
+label, input{
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+
+label{
+    font-size: 1.2rem;
+}
+
+input{
+    background-color: transparent;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+input:focus{
+    border-bottom: 2px solid var(--cor1);
+    outline: none;
+    transition: .5s;
+}
+
+#esq-senha{
+    text-align: right;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--cor1);
+    border-radius: 0px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    color: black;
+    background-color:rgba(255, 158, 32, 0.596);
+    transition: .7s;
+}
+
+/*Div Cadastrar*/
+div#cadastrar p{
+    margin-bottom: 10px;
+}
